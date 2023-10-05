@@ -6,6 +6,12 @@
     flex-wrap: wrap;
     gap: 100px;
     margin-top: 215px;
+    margin-bottom: 180px;
+}
+
+.projectContainer {
+    margin: 0 !important;
+    --bs-gutter-x: 0 !important;
 }
 
 .aboutSideLink {
@@ -13,6 +19,12 @@
     font-size: 20px;
     border: none;
     background-color: transparent;
+}
+
+.arrowDown {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 140px;
 }
 
 .aboutSideLink:hover {
@@ -167,10 +179,24 @@
     justify-content: center;
     gap: 30px;
     margin-top: 10px;
+    margin-bottom: 80px;
 }
 
 .aboutSectionDiv {
     margin-top: 65px;
+    background-color: #DEDEDC;
+    padding-bottom: 65px;
+}
+
+.highlightColor {
+    color: #DEDEDC;
+    text-shadow: 0px 0px 10px #CC0063, 0px 0px 10px #CC0063, 0px 0px 10px #CC0063, 0px 0px 10px #CC0063;
+    font-size: 35px;
+}
+
+.highlightColorInfo {
+    color: #DEDEDC;
+    text-shadow: 0px 0px 10px #CC0063, 0px 0px 10px #CC0063, 0px 0px 10px #CC0063, 0px 0px 10px #CC0063, 0px 0px 10px #CC0063, 0px 0px 10px #CC0063;
 }
 
 .homeNavBtn {
@@ -219,13 +245,13 @@
 
 .aboutEmoji {
     width: 250px;
-    height: 250px;
-    margin-top: 150px;
-} 
+    margin-top: 200px;
+}
 
 .helloTxt {
     font-family: 'DM Serif Display', serif;
     font-size: 40px;
+    padding-top: 50px;
 }
 
 .helloInfo {
@@ -257,7 +283,7 @@
     max-width: 276px;
     color: black;
     text-decoration: underline 2px solid #CC0063;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
 }
 
 .contactItem:hover {
@@ -271,7 +297,7 @@
     max-width: 276px;
     color: black;
     text-decoration: underline 2px solid #CC0063;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
 }
 
 .linkedItem:hover {
@@ -288,7 +314,7 @@
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     text-decoration: underline 2px solid #CC0063;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    transition: color .8s ease-in-out, box-shadow .8s ease-in-out;
 }
 
 .gitItem:hover {

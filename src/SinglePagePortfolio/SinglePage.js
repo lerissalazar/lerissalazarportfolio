@@ -6,20 +6,20 @@ import { Icon } from '@iconify/react';
 
 export default function SinglePage() {
     return (
-        <div class='container fluid'>
+        <div class='container' className='projectContainer'>
 
-             {/* Navbar */}
+            {/* Navbar */}
 
-             <div class='row' className='navRow'>
-                    <button className='homeNavBtn'>Home</button>
-                    <button className='aboutNavBtn'>About</button>
-                    <button className='projectNavBtn'>Project</button>
-                    <button className='skillNavBtn'>Skills</button>
-                </div>
+            {/* <div class='row' className='navRow'>
+                <button className='homeNavBtn'>Home</button>
+                <button className='aboutNavBtn'>About</button>
+                <button className='projectNavBtn'>Project</button>
+                <button className='skillNavBtn'>Skills</button>
+            </div> */}
 
             {/* Home Section */}
 
-            <div class='row' className='homeSectionRow' >
+            <div class='container' className='homeSectionRow' >
                 <div>
                     <p className='welcomeTxt'>
                         <span class="title-word title-word-1">Welcome </span>
@@ -27,7 +27,7 @@ export default function SinglePage() {
                         <span class="title-word title-word-3">my </span>
                         <span class="title-word title-word-4">Portfolio</span>
                     </p>
-                    {/* <div className='sideNavLink'>
+                    <div className='sideNavLink'>
                         <div className='sideNavDiv'>
                             <button className='aboutSideLink'>About</button>
                         </div>
@@ -37,14 +37,24 @@ export default function SinglePage() {
                         <div className='sideNavDiv'>
                             <button className='skillSideLink'>Skills</button>
                         </div>
-                    </div> */}
+                    </div>
                 </div>
                 <div className='starterEmojiDiv'>
                     <img className='starterEmoji' src={ComputerBitmoji} alt='' />
                 </div>
             </div>
+            <div className='arrowDown'>
+                <Icon icon="iconamoon:arrow-down-2-thin" width="45" />
+            </div>
 
             {/* Main Portfolio Section */}
+
+            <div id='navbar' class='row' className='navRow'>
+                <button className='homeNavBtn'>Home</button>
+                <button className='aboutNavBtn'>About</button>
+                <button className='projectNavBtn'>Project</button>
+                <button className='skillNavBtn'>Skills</button>
+            </div>
 
             <div className='mainPortfolioSection'>
 
@@ -53,8 +63,8 @@ export default function SinglePage() {
                 <div className='aboutSectionDiv'>
                     <div class='row' className='aboutRow'>
                         <div>
-                            <p className='helloTxt'>Hello, my name is Lerissa Lazar</p>
-                            <p className='helloInfo'>I specialize in Frontend Web Development UI/UX Design.<br />
+                            <p className='helloTxt'>Hello, my name is <span className='highlightColor'>Lerissa Lazar</span></p>
+                            <p className='helloInfo'>I specialize in <span className='highlightColorInfo'>Frontend Web Development</span> & <span className='highlightColorInfo'>UI/UX Design.</span> <br />
                                 I am constantly seeking new opportunities to expand my expertise in development & design. <br />
                                 Beyond my technical skills, I also run two small businesses. I make custom cakes that bring joy to celebrations & I create unique and stylish custom shoes that make a statement. These businesses not only allow me to showcase my creativity but also enable me to connect with people on a personal level.</p>
                             <p className='contactTxt'>Contact</p>
