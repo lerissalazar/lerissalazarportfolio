@@ -1,0 +1,418 @@
+//HomeSection
+
+.homeSectionRow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 215px;
+}
+
+.aboutSideLink {
+    color: black;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.aboutSideLink:hover {
+    text-decoration: underline 2px solid #CC0063 !important;
+}
+
+.projectSideLink {
+    color: black;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.projectSideLink:hover {
+    text-decoration: underline 2px solid #CC0063 !important;
+}
+
+.skillSideLink {
+    color: black;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+.skillSideLink:hover {
+    text-decoration: underline 2px solid #CC0063 !important;
+}
+
+
+.sideNavLink {
+    list-style-type: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.sideNavDiv {
+    margin-bottom: 20px !important;
+}
+
+.welcomeTxt {
+    font-size: 45px;
+    font-weight: 500;
+    font-family: 'DM Serif Display', serif;
+}
+
+.title-word {
+    animation: color-animation 3s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #cc0063;
+    --color-2: #ff679b;
+    --color-3: #910048;
+}
+
+.title-word-2 {
+    --color-1: #ff4c6b;
+    --color-2: #6c1d45;
+    --color-3: #ff5cab;
+}
+
+.title-word-3 {
+    --color-1: #6c1d45;
+    --color-2: #910048;
+    --color-3: #6c1d45;
+}
+
+.title-word-4 {
+    --color-1: #ff679b;
+    --color-2: #910048;
+    --color-3: #cc0063;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+.starterEmoji {
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width: 430px) {
+    .divRow {
+        margin-top: 0px !important;
+        gap: 50px;
+    }
+
+    .welcomeTxt {
+        text-align: center;
+    }
+
+    .sideNavDiv {
+        text-align: center;
+    }
+
+    .headshot {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .starterDivRow {
+        margin-top: -10px !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .divRow {
+        gap: 2px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .divRow {
+        margin-top: 360px;
+    }
+}
+
+// Main Section SCSS 
+
+// About Section
+
+.navRow {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.aboutSectionDiv {
+    margin-top: 65px;
+}
+
+.homeNavBtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.homeNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.aboutNavBtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.aboutNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.projectNavBtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.projectNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.skillNavBtn {
+    font-family: 'Roboto Condensed', sans-serif;
+    border: none;
+    font-size: 20px;
+    background-color: transparent;
+}
+
+.skillNavBtn:hover {
+    text-decoration: underline 2px solid #CC0063;
+}
+
+.aboutEmoji {
+    width: 250px;
+    height: 250px;
+    margin-top: 150px;
+} 
+
+.helloTxt {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+}
+
+.helloInfo {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    max-width: 560px;
+}
+
+.aboutRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 200px;
+    justify-content: center;
+}
+
+.contactTxt {
+    font-family: 'DM Serif Display', serif;
+    font-size: 40px;
+}
+
+.contactLine {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactItem {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    max-width: 276px;
+    color: black;
+    text-decoration: underline 2px solid #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.contactItem:hover {
+    box-shadow: inset 265px 0 0 0 #f0cde1;
+    color: black;
+}
+
+.linkedItem {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    max-width: 276px;
+    color: black;
+    text-decoration: underline 2px solid #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.linkedItem:hover {
+    box-shadow: inset 115px 0 0 0 #f0cde1;
+    color: black;
+}
+
+.emailIcon {
+    padding-bottom: 5px;
+}
+
+.gitItem {
+    color: black !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    text-decoration: underline 2px solid #CC0063;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.gitItem:hover {
+    box-shadow: inset 100px 0 0 0 #f0cde1;
+    color: black;
+}
+
+.gitIcon {
+    padding-bottom: 5px;
+    color: black !important;
+}
+
+.linkedIcon {
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .helloTxt {
+        font-size: 30px;
+    }
+
+    .helloInfo {
+        font-size: 18px;
+        width: 400px;
+    }
+
+    .aboutRow {
+        gap: 20px;
+    }
+
+    .headshot2 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .contactTxt {
+        font-size: 30px;
+    }
+
+    .gitItem {
+        font-size: 18px;
+    }
+
+    .linkedItem {
+        font-size: 18px;
+    }
+
+    .contactItem {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .headshot2 {
+        margin-top: 0 !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .helloTxt {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .helloInfo {
+        font-size: 15px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .aboutRow {
+        gap: 0;
+    }
+
+    .headshot2 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .contactTxt {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .gitItem {
+        font-size: 15px;
+    }
+
+    .linkedItem {
+        font-size: 15px;
+    }
+
+    .contactItem {
+        font-size: 15px;
+    }
+
+    .mobileIcon {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    .helloTxt {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .helloInfo {
+        font-size: 15px;
+        text-align: center;
+        width: 315px;
+    }
+
+    .contactTxt {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobileIcon {
+        text-align: center;
+    }
+}
