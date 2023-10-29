@@ -2,6 +2,7 @@ import React from 'react'
 import '../SinglePagePortfolio/SinglePage.scss'
 import ComputerBitmoji from '../Assets/computerBitmoji.png'
 import LoveBitmoji from '../Assets/loveBitmoji.png'
+import { Nav, Navbar, Container } from 'react-bootstrap'
 import { Icon } from '@iconify/react';
 
 export default function SinglePage() {
@@ -49,12 +50,14 @@ export default function SinglePage() {
 
             {/* Main Portfolio Section */}
 
-            <div id='navbar' class='row' className='navRow'>
-                <button className='homeNavBtn'>Home</button>
-                <button className='aboutNavBtn'>About</button>
-                <button className='projectNavBtn'>Project</button>
-                <button className='skillNavBtn'>Skills</button>
-            </div>
+            <Navbar sticky="top" className='navRow'>
+                <Nav>
+                    <Nav.Link className='homeNavBtn' href="#">Home</Nav.Link>
+                    <Nav.Link className='aboutNavBtn' href="#">About</Nav.Link>
+                    <Nav.Link className='projectNavBtn' href="#">Project</Nav.Link>
+                    <Nav.Link className='skillNavBtn' href="#">Skills</Nav.Link>
+                </Nav>
+            </Navbar>
 
             <div className='mainPortfolioSection'>
 

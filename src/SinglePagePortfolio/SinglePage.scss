@@ -176,16 +176,13 @@
 
 .navRow {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 10px;
-    margin-bottom: 80px;
+    justify-content: center !important;
 }
 
 .aboutSectionDiv {
     margin-top: 65px;
     background-color: #DEDEDC;
-    padding-bottom: 65px;
+    padding-bottom: 400px;
 }
 
 .highlightColor {
@@ -204,10 +201,12 @@
     border: none;
     font-size: 20px;
     background-color: transparent;
+    color: black;
 }
 
 .homeNavBtn:hover {
     text-decoration: underline 2px solid #CC0063;
+    color: black;
 }
 
 .aboutNavBtn {
@@ -215,10 +214,12 @@
     border: none;
     font-size: 20px;
     background-color: transparent;
+    color: black !important;
 }
 
 .aboutNavBtn:hover {
     text-decoration: underline 2px solid #CC0063;
+    color: black;
 }
 
 .projectNavBtn {
@@ -226,10 +227,12 @@
     border: none;
     font-size: 20px;
     background-color: transparent;
+    color: black;
 }
 
 .projectNavBtn:hover {
     text-decoration: underline 2px solid #CC0063;
+    color: black;
 }
 
 .skillNavBtn {
@@ -237,10 +240,12 @@
     border: none;
     font-size: 20px;
     background-color: transparent;
+    color: black;
 }
 
 .skillNavBtn:hover {
     text-decoration: underline 2px solid #CC0063;
+    color: black;
 }
 
 .aboutEmoji {
